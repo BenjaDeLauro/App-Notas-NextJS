@@ -1,0 +1,22 @@
+PASOS PARA ENTREGAR EN GITHUB — BENJAMÍN DE LAURO
+
+1) Ingresá a https://github.com/new y creá un repositorio público llamado App-Notas-NextJS (sin README ni .gitignore: ya están incluidos).
+2) Descomprimí el ZIP y abrí la carpeta App-Notas-NextJS-BenjaDeLauro en VS Code.
+3) Abrí la terminal y ejecutá:
+
+npm install
+npm run dev
+
+4) Probá http://localhost:3000 y también /notas, /notas/categorias, /notas/1, /acerca y /notas/nueva.
+5) Luego ejecutá:
+
+git init
+git add .
+git commit -m "App de notas completa con rutas y layout en Next.js"
+git branch -M main
+git remote add origin https://github.com/BenjaDeLauro/App-Notas-NextJS.git
+git push -u origin main
+
+6) Entregá este enlace: https://github.com/BenjaDeLauro/App-Notas-NextJS
+
+ATENCIÓN: el enlace funcionará solamente cuando hayas creado el repositorio y completado el push.

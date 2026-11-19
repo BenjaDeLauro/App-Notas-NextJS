@@ -1,0 +1,6 @@
+import Link from 'next/link';
+import { ArrowRight, Code2, GraduationCap, NotebookPen } from 'lucide-react';
+export const metadata = { title: 'Acerca de | Mis Notas' };
+export default function AcercaPage() {
+ return <main className="shell page page-narrow"><span className="section-kicker">SOBRE EL PROYECTO</span><h1 className="page-title">Una app hecha para aprender</h1><p className="page-subtitle">Mi proyecto de notas con Next.js para Programación III.</p><div className="about-card"><span className="about-icon"><NotebookPen size={26}/></span><h2>¿Qué es nota.?</h2><p>Es una aplicación web para crear, consultar, modificar, eliminar y organizar notas por categorías. La desarrollé para practicar el App Router de Next.js y la navegación con el componente Link.</p><div className="about-items"><p><GraduationCap size={19}/><strong>Autor:</strong> Benjamín De Lauro</p><p><Code2 size={19}/><strong>Tecnologías:</strong> Next.js, React y CSS</p><p><NotebookPen size={19}/><strong>Materia:</strong> Programación III · ITEC Río Cuarto</p></div><p className="about-notice">Las notas se guardan mediante localStorage en el navegador que estás utilizando. No requieren cuenta ni servidor de datos.</p><Link className="button" href="/notas">Ver mis notas <ArrowRight size={18}/></Link></div></main>;
+}

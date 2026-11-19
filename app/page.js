@@ -1,0 +1,13 @@
+import Link from 'next/link';
+import { ArrowRight, CheckCircle2, LayoutGrid, Sparkles, Zap } from 'lucide-react';
+
+export default function Home() {
+  return <main>
+    <section className="hero"><div className="shell hero-inner">
+      <div className="hero-copy"><span className="eyebrow"><Sparkles size={15}/> ORGANIZÁ TUS IDEAS</span><h1>Un lugar para cada <span>gran idea.</span></h1><p>Guardá tus apuntes, organizá tus pendientes y mantené todo lo importante en un mismo lugar. Simple, rápido y a tu manera.</p><div className="hero-buttons"><Link href="/notas" className="button">Explorar mis notas <ArrowRight size={19}/></Link><Link href="/notas/nueva" className="button button-outline">Crear una nota</Link></div><div className="hero-caption"><CheckCircle2 size={17}/> Tus notas se guardan en este navegador</div></div>
+      <div className="hero-visual" aria-hidden="true"><div className="preview-top"><span className="preview-dots">● ● ●</span><span>Mis notas</span></div><div className="preview-card first"><span className="pill estudio">Estudio</span><h3>Preparar el próximo examen</h3><p>Repasar Next.js y los conceptos de rutas.</p><span className="preview-line"/></div><div className="preview-card second"><span className="pill personal">Personal</span><h3>Ideas para mi proyecto</h3><p>Diseñar una app más clara y organizada.</p></div><div className="floating-plus">+</div></div>
+    </div></section>
+    <section className="shell section"><div className="section-heading"><span className="section-kicker">TU ESPACIO DIGITAL</span><h2>Menos desorden. Más claridad.</h2><p>Una aplicación creada para que escribir y encontrar tus notas sea fácil.</p></div><div className="feature-grid"><div className="feature"><span className="feature-icon peach"><Zap size={25}/></span><h3>Anotá al instante</h3><p>Creá una nueva nota en segundos y seguí con lo tuyo.</p></div><div className="feature"><span className="feature-icon lilac"><LayoutGrid size={25}/></span><h3>Organizá por categorías</h3><p>Separá tus apuntes de estudio, facultad e ideas personales.</p></div><div className="feature"><span className="feature-icon mint"><CheckCircle2 size={25}/></span><h3>Todo en un solo lugar</h3><p>Buscá, editá y eliminá tus notas cuando lo necesites.</p></div></div></section>
+    <section className="shell"><div className="cta"><div><span className="section-kicker">EMPEZÁ AHORA</span><h2>¿Tenés algo para recordar?</h2><p>Tu próxima idea merece quedar escrita.</p></div><Link href="/notas/nueva" className="button button-light">Escribir una nota <ArrowRight size={18}/></Link></div></section>
+  </main>;
+}
